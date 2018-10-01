@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-xs-12">
+
+    <div class="row">
+      <div class="col-xs-6" id="title">
+        <span>Distribution Search</span>
+      </div>
+    </div>
+
+    <div class="row" id="input">
+      <div class="col-lg-2 col-md-2">
+        <input type="text" class="form-control" #id placeholder="Distribution Id" />
+      </div>
+      <div class="col-lg-2 col-md-2">
+        <input type="text" class="form-control" #ssn placeholder="Social Security Number" />
+      </div>
+      <div class="col-lg-2 col-md-2">
+        <input type="text" class="form-control" #lname placeholder="Last Name" />
+      </div>
+      <div class="col-lg-2 col-md-2">
+        <input type="text" class="form-control" #plan placeholder="Enter Plan" />
+      </div>
+      <div class="col-lg-2 col-md-2">
+          <input type="submit" class="btn btn-success" value="Search" (click)="search(id.value)">
+      </div>
+      <div class="col-lg-2 col-md-2">
+        <a [routerLink]="['/login']" class="btn btn-primary">Logout</a>
+     </div>
+    </div>
+    <br/>
+    <div class="row">
+      <table class="table">
+        <tr *ngIf="showHeader">
+          <th>Distribution Id</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Plan</th>
+          <th>Social Security Number</th>
+        </tr>
+        <tr *ngFor="let distribution of distributionSearch">
+          <td>{{distribution.distributionId}}</td>
+          <td>{{distribution.fname}}</td>
+          <td>{{distribution.lname}}</td>
+          <td>{{distribution.plan}}</td>
+          <td>{{distribution.ssn}}</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</div>

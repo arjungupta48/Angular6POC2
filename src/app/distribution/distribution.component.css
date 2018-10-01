@@ -1,0 +1,14 @@
+div, th {
+    text-align: center;
+}
+#title {
+    text-align: left;
+    margin-left: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+#input {
+    padding-top: 20px;
+    margin-left: 10px;
+}
