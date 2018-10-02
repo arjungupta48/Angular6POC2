@@ -1,3 +1,5 @@
+<app-header></app-header>
+
 <div class="row">
   <div class="col-xs-12">
 
@@ -8,24 +10,24 @@
     </div>
 
     <div class="row" id="input">
-      <div class="col-lg-2 col-md-2">
+      <div class="col-lg-2 col-md-2 col-xs-2">
         <input type="text" class="form-control" #id placeholder="Distribution Id" />
       </div>
-      <div class="col-lg-2 col-md-2">
+      <div class="col-lg-2 col-md-2 col-xs-2">
         <input type="text" class="form-control" #ssn placeholder="Social Security Number" />
       </div>
-      <div class="col-lg-2 col-md-2">
+      <div class="col-lg-2 col-md-2 col-xs-2">
         <input type="text" class="form-control" #lname placeholder="Last Name" />
       </div>
-      <div class="col-lg-2 col-md-2">
+      <div class="col-lg-2 col-md-2 col-xs-2">
         <input type="text" class="form-control" #plan placeholder="Enter Plan" />
       </div>
-      <div class="col-lg-2 col-md-2">
+      <div class="col-lg-2 col-md-2 col-xs-2">
           <input type="submit" class="btn btn-success" value="Search" (click)="search(id.value)">
       </div>
-      <div class="col-lg-2 col-md-2">
+      <!-- <div class="col-lg-2 col-md-2 col-xs-2">
         <a [routerLink]="['/login']" class="btn btn-primary">Logout</a>
-     </div>
+      </div> -->
     </div>
     <br/>
     <div class="row">
