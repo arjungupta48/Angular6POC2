@@ -12,3 +12,6 @@ div, th {
     padding-top: 20px;
     margin-left: 10px;
 }
+td{
+    border-bottom: 1px solid #ddd;
+}
