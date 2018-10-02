@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DistributionComponent } from './distribution/distribution.component';
+import { HeaderComponent } from './header/header.component';
 
 import { fakeBackendProvider } from './helpers/fake-backend';
 import { AlertComponent } from './directives/alert.component';
@@ -34,7 +35,8 @@ const appRoutes: Routes = [
     LoginComponent,
     RegisterComponent,
     DistributionComponent,
-    AlertComponent
+    HeaderComponent,
+    AlertComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
