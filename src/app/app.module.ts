@@ -51,6 +51,8 @@ const appRoutes: Routes = [
         UserService,
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+
+        // adding this to avoid base href error in test cases
         { provide: APP_BASE_HREF, useValue : '/' },
 
         // provider used to create fake backend
