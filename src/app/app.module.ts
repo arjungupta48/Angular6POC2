@@ -20,6 +20,8 @@ import { UserService } from './services/user.service';
 import { AlertService } from './services/alert.service';
 import { DistributionService } from './services/distribution.service';
 
+import { APP_BASE_HREF } from '@angular/common';
+
 const appRoutes: Routes = [
   { path: '', component: DistributionComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
@@ -49,6 +51,7 @@ const appRoutes: Routes = [
         UserService,
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+        { provide: APP_BASE_HREF, useValue : '/' },
 
         // provider used to create fake backend
         fakeBackendProvider,
