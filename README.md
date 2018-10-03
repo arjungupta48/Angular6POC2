@@ -9,6 +9,8 @@ Angular CLI version - 6.2.3
 > install angular cli latest version : 
   open nodeJS command promt and run this: npm install -g @angular/cli
 
+> clone this to your local
+> run this to install angular dependencies: npm install 
 > To run the app: ng serve -o
 > To run test: ng test
 
