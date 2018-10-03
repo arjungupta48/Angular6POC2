@@ -3,6 +3,15 @@
 Node js version - v8.12.0 
 Angular CLI version - 6.2.3
 
+# HowToRunThisApp
+
+> install latest version nodeJS: https://nodejs.org/en/
+> install angular cli latest version : 
+  open nodeJS command promt and run this: npm install -g @angular/cli
+
+> To run the app: ng serve -o
+> To run test: ng test
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
