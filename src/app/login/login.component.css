@@ -4,3 +4,18 @@
 .required{
     color: red;
 }
+header{
+    text-align: left;
+    padding: 20px;
+    font-size: 35px;
+    border-bottom: 2px solid #eee;
+    background-color: gainsboro;
+}
+img{
+    width: 100px;
+    height: 80px;
+}
+span{
+    font-weight: bold;
+    font-family: inherit;
+}
