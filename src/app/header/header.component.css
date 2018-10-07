@@ -6,10 +6,10 @@ header{
     background-color: gainsboro;
 }
 img{
-    width: 100px;
-    height: 80px;
+    width: 250px;
+    height: 50px;
 }
 span{
     font-weight: bold;
-    font-family: cursive;
+    font-family: inherit;
 }
